@@ -41,7 +41,7 @@
     <script>
 
         $(document).ready(function () {
-            const liffId = process.env ?? "0";
+            const liffId = process.env.LIFF_ID ?? "0";
             initializeLiff(liffId);
         })
 
