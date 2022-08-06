@@ -46,8 +46,10 @@
             const param2 = liff.state.id;
             const param1 = new URLSearchParams(decodeURIComponent(window.location.search.substring(15)))
             const id = param1.get('id');
-            
             const liffId = id;
+
+            window.alert(id + ":" + param2);
+
             initializeLiff(liffId);
         })
 
@@ -59,7 +61,6 @@
             }).catch((err) => {
                 window.alert('LIFF Initialization failed ', err);
             });
-            window.alert(id + ":" + param2);
         }
 
         function sendText(text) {
