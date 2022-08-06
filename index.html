@@ -65,6 +65,7 @@
                 'type': 'text',
                 'text': text
             }]).then(function () {
+                window.alert(param1);
                 liff.closeWindow();
             }).catch(function (error) {
                 window.alert('Failed to send message '+ id );
