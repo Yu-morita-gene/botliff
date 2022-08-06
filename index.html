@@ -43,7 +43,7 @@
 
         $(document).ready(function () {
             const liffId = "1657365828-3o8WY9rY";
-            const param2 = liff.state.id;
+//            const param2 = liff.state.id;
             const param1 = new URLSearchParams(decodeURIComponent(window.location.search.substring(15)))
 //            const id = param1.get('id');
 //            const liffId2 = id;
@@ -56,7 +56,7 @@
             }).then(() => {
                 initializeApp();
             }).catch((err) => {
-                window.alert('LIFF Initialization failed '+ param1,err );
+                window.alert(param1,err );
             });
         }
 
