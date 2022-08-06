@@ -10,26 +10,62 @@
 <body>
 
     <form class="w-75 mx-auto">
-        <p class="mt-3">注文番号</p>
-        <div>
-            <input class="form-control w-100 mt-1" name="name" placeholder="" required>
-        </div>
-        <p class="mt-3">色</p>
-        <div>
-            <input class="form-control w-100 mt-1" name="udetate" required>
-        </div>
+        <p class="mt-3">色(長袖)</p>
+        <option>001　ホワイト</option>
+        <option>003　杢グレー</option>
+        <option>014　パープル</option>
+        <option>037　アーミーグリーン</option>
+        <option>005　ブラック</option>
+        <option>020　イエロー</option>
+        <option>165　デイジー</option>
+        <option>015　オレンジ</option>
+        <option>010　レッド</option>
+        <option>112　バーガンディ</option>
+        <option>132　ライトピンク</option>
+        <option>011　ピンク</option>
+        <option>034　ターコイズ</option>
+        <option>032　ロイヤルブルー</option>
+        <option>031　ネイビー</option>
+
+        <!-- <div>
+            <input class="form-control w-100 mt-1" name="colorNum" required>
+        </div> -->
         <p class="mt-3">長袖・半袖</p>
-        <div>
-            <input class="form-control w-100 mt-1" name="fukkin" required>
-        </div>
+        <select name = "long_short" required>
+        <option>長袖</option>
+        <option>半袖</option>
+        </select>
+        <!-- <div>
+            <input class="form-control w-100 mt-1" name="long_short" required>
+        </div> -->
         <p class="mt-3">デザイン</p>
-        <div>
-            <input class="form-control w-100 mt-1" name="haikin" required>
-        </div>
-        <p class="mt-3">サイズ</p>
-        <div>
-            <input class="form-control w-100 mt-1" name="sukuwat" required>
-        </div>
+        <select name = "design" required>
+        <option>ロゴ</option>
+        <option>2022年版</option>
+        <option>2023年版</option>
+        </select>
+        <!-- <div>
+            <input class="form-control w-100 mt-1" name="design" required>
+        </div> -->
+        <p class="mt-3">サイズ(長袖)</p>
+        <select name = "design" required>
+            <option>110</option>
+            <option>130</option>
+            <option>150</option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>2XL</option>
+            <option>2XL</option>                
+        </select>
+
+            
+
+        <!-- <div>
+            <input class="form-control w-100 mt-1" name="size" required>
+        </div> -->
         <input type="submit" class="mt-4 btn btn-primary" value="カゴに入れる">
     </form>
 
@@ -71,12 +107,12 @@
 
         $(function () {
             $('form').submit(function () {
-                const name    = $('input[name="name"]').val();
-                const udetate = $('input[name="udetate"]').val();
-                const fukkin  = $('input[name="fukkin"]').val();
-                const haikin  = $('input[name="haikin"]').val();
-                const sukuwat = $('input[name="sukuwat"]').val();
-                const msg = `${name}\n${udetate}\n${fukkin}\n${haikin}\n${sukuwat}`;
+                // const orderNum    = $('input[name="orderNum"]').val();
+                const colorNum = $('input[name="colorNum"]').val();
+                const long_short  = $('input[name="long_short"]').val();
+                const design  = $('input[name="design"]').val();
+                const size = $('input[name="size"]').val();
+                const msg = `${colorNum}\n${long_short}\n${design}\n${size}`;
                 sendText(msg);
                 return false;
             });
