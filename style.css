@@ -1,5 +1,9 @@
 @charset 'utf-8';
 
+body{
+    font-family: '游ゴシック','メイリオ',sans-serif;
+}
+
 p{
     font-size: 20px;
     font-weight: bold;
@@ -12,4 +16,24 @@ p{
     width: 100px;
     height: 40px;
 
+}
+
+.coloricon{
+    width: 10px;
+    height: 10px;
+    border: solid;
+    border-radius: 2px;
+    border-color: rgb(30,30,30);
+}
+
+#white{
+    color:white;
+}
+
+#mokugray{
+    color:rgb(170, 170, 170);
+}
+
+#purple{
+    color:#4B236B
 }
