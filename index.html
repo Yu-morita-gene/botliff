@@ -10,8 +10,7 @@
 <body>
 
     <form class="w-75 mx-auto">
-        <!-- <p class="mt-3">色(長袖)<a href="https://prod-toms-web.s3.amazonaws.com/assets/product/00102/pdf/color_chart/00102-CVL.pdf" target="_blank" rel="noopener noreferrer">色見本はこちら</a></p> -->
-        <h3 class="mt-3">色(長袖)<a href="https://prod-toms-web.s3.amazonaws.com/assets/product/00102/pdf/color_chart/00102-CVL.pdf" target="_blank" rel="noopener noreferrer">色見本はこちら</a></h3>
+        <p class="mt-3">色(長袖)<a href="https://prod-toms-web.s3.amazonaws.com/assets/product/00102/pdf/color_chart/00102-CVL.pdf" target="_blank" rel="noopener noreferrer">色見本はこちら</a></p>
         <select name = "colorNum" required>
             <option hidden>選択してください</option>
             <option value="001">001　ホワイト</option>
@@ -31,17 +30,10 @@
             <option value="031">031　ネイビー</option>
         </select>
         <div>在庫の確認はこちらから<a href="https://tomsj.com/product/00102-CVL/#" target="_blank">”<img id="box_image" src="https://prod-toms-web.s3.amazonaws.com/assets/brand/rp/images/product/ico_stock.png" alt="box">在庫を確認”へ</a></div>
-        <!-- <div>
-            <input class="form-control w-100 mt-1" name="colorNum" required>
-        </div> -->
-
-        <!-- <p class="mt-3">長袖・半袖</p> -->
-        <h2 class="mt-3">長袖・半袖</h2>
+        
+        <p class="mt-3">長袖・半袖</p>
         <div>※長袖が選択されています※</div>
-        <!-- <div>
-            <input class="form-control w-100 mt-1" name="long_short" required>
-        </div> -->
-
+        
         <p class="mt-3">デザイン</p>
         <select name = "design" required>
             <option hidden>選択してください</option>
@@ -49,10 +41,6 @@
             <option value="22">2022年版</option>
             <option value="23">2023年版</option>
         </select>
-
-        <!-- <div>
-            <input class="form-control w-100 mt-1" name="design" required>
-        </div> -->
 
         <p class="mt-3">サイズ(長袖)<a href="https://prod-toms-web.s3.amazonaws.com/assets/product/00102/pdf/size_chart/00102-CVL-silhouette.pdf" target="_blank">サイズ見本はこちら</a></p>
         <select name = "size" required>
@@ -68,10 +56,6 @@
             <option value="2XL">2XL</option>
             <option value="3XL">3XL</option>                
         </select>
-            
-        <!-- <div>
-            <input class="form-control w-100 mt-1" name="size" required>
-        </div> -->
 
         <input type="submit" class="mt-4 btn btn-primary" value="カゴに入れる">
     </form>
@@ -114,7 +98,6 @@
 
         $(function () {
             $('form').submit(function () {
-                // const orderNum    = $('input[name="orderNum"]').val();
                 const colorNum = $('select[name="colorNum"]').val();
                 const long_short  = $('select[name="long_short"]').val();
                 const design  = $('select[name="design"]').val();
