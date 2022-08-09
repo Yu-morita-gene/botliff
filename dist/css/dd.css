@@ -10,10 +10,6 @@
  *  * /
  */
 
-body{
-    font-family: '游ゴシック','メイリオ',sans-serif;
-}
-
 p{
     font-size: 18px;
     font-weight: bold;
@@ -75,4 +71,8 @@ a{
 select{
     margin-top: 0px;
     margin-left: 50px;
+}
+
+body{
+    font-family: '游ゴシック','メイリオ',sans-serif;
 }
