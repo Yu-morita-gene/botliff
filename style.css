@@ -5,17 +5,27 @@ body{
 }
 
 p{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     color: rgb(80,80,80);
     margin-left: 30px;
+}
+
+a{
+    font-size: 8;
+    font-weight: normal;
+}
+
+#box-image{
+    width:5px;
+    height:5px;
 }
 
 .selectbox{
     background-color: rgba(230,230,230,0.8);
     width: 100px;
     height: 40px;
-
+    margin-left: 50px
 }
 
 .coloricon{
