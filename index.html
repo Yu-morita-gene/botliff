@@ -105,7 +105,7 @@
             $('form').submit(function () {
                 const commandName = "オーダー"
                 const colorNum = $('select[name="colorNum"]').val();
-                const long_short  = $('select[name="long_short"]').val();
+                const long_short  = "long"
                 const design  = $('select[name="design"]').val();
                 const size = $('select[name="size"]').val();
                 const msg = `${commandName}\n${colorNum}\n${long_short}\n${design}\n${size}`;
