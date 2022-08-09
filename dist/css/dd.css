@@ -46,37 +46,12 @@ a{
     font-weight: normal;
 }
 
-#box-image{
-    width:5%;
-    height:5%;
-}
-
 .selectbox{
     background-color: rgba(230,230,230,0.8);
     width: 200px;
     height: 18px;
     margin-left: 50px;
     font-size: 10px;
-}
-
-.coloricon{
-    width: 10px;
-    height: 10px;
-    border: solid;
-    border-radius: 2px;
-    border-color: rgb(30,30,30);
-}
-
-#white{
-    color:white;
-}
-
-#mokugray{
-    color:rgb(170, 170, 170);
-}
-
-#purple{
-    color:#4B236B
 }
 
 .submit_button{
