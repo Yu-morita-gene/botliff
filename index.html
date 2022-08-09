@@ -104,10 +104,10 @@
         $(function () {
             $('form').submit(function () {
                 const commandName = "オーダー"
-                const colorNum = $('select[name="colorNum"]').val();
+                const colorNum = $('[name="colorNum"]').val();
                 const long_short  = "long"
-                const design  = $('select[name="design"]').val();
-                const size = $('select[name="size"]').val();
+                const design  = $('[name="design"]').val();
+                const size = $('[name="size"]').val();
                 const msg = `${commandName}\n${colorNum}\n${long_short}\n${design}\n${size}`;
                 sendText(msg);
                 return false;
