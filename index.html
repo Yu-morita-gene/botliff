@@ -17,7 +17,7 @@
     <form class="w-75 mx-auto">
         <p class="mt-3">色(長袖)<a href="https://prod-toms-web.s3.amazonaws.com/assets/product/00102/pdf/color_chart/00102-CVL.pdf" target="_blank" rel="noopener noreferrer">色見本はこちら</a></p>
         <select class="selectbox" name ="colorNum" is="ms-dropdown" required>
-            <option hidden>選択してくださいyone</option>
+            <option hidden>選択してください</option>
             <option value="001" data-image=""><div class="coloricon" id="white"></div> 001　ホワイト</option>
             <option value="003"><div class="coloricon" id="mokugray"></div>003　杢グレー</option>
             <option value="014"><div class="coloricon" id="purple"></div>014　パープル</option>
@@ -34,10 +34,10 @@
             <option value="032">032　ロイヤルブルー</option>
             <option value="031">031　ネイビー</option>
         </select>
-        <p class="added">在庫の確認はこちらから<a href="https://tomsj.com/product/00102-CVL/#" target="_blank">”<img id="box_image" src="https://prod-toms-web.s3.amazonaws.com/assets/brand/rp/images/product/ico_stock.png" alt="box">在庫を確認”へ</a></p>
+        <p id="to_stock">在庫の確認はこちらから<a href="https://tomsj.com/product/00102-CVL/#" target="_blank">”在庫を確認”へ</a></p>
         
         <p class="mt-3">長袖・半袖</p>
-        <p class="added">※長袖が選択されています※</p>
+        <p id="selected_size">※長袖が選択されています※</p>
         
         <p class="mt-3">デザイン</p>
         <select class="selectbox" name="design" is="ms-dropdown" required>
@@ -62,7 +62,7 @@
             <option value="3XL">3XL</option>                
         </select>
 
-        <input type="submit" class="mt-4 btn btn-primary" value="カゴに入れる">
+        <input type="submit" class="submit_button" value="カゴに入れる">
     </form>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
