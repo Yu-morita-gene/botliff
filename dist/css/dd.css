@@ -24,7 +24,8 @@ p{
 #added{
     font-size:10px;
     font-weight:normal;
-    margin-left:50px
+    margin-left:50px;
+    margin-top:0px;
 }
 
 a{
