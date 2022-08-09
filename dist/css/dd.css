@@ -82,10 +82,10 @@ a{
 .submit_button{
     width: 150px;
     height: 45px;
-    margin:50 0 0 50;
+    margin:30 0 0 30;
     background-color:lightblue;
     color:white;
-    border-radius: 3px;
+    border-radius: 2px;
     border-width: 2px;
     border-color: rgb(180,180,180);
     font-size: 15px;
