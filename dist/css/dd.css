@@ -11,7 +11,7 @@
  */
 
 p{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     color: rgb(80,80,80);
     margin: 40 0 0 10;
@@ -20,7 +20,7 @@ p{
 #to_stock{
     width: 320px;
     height: 28px;
-    font-size:13px;
+    font-size:11px;
     font-weight:normal;
     margin-left:5px;
     margin-top:3px;
@@ -42,7 +42,7 @@ p{
 }
 
 a{
-    font-size: 13;
+    font-size: 11px;
     font-weight: normal;
     text-align: right;
 }
@@ -56,10 +56,10 @@ a{
 }
 
 .submit_button{
-    width: 150px;
-    height: 45px;
+    width: 130px;
+    height: 35px;
     margin:30 0 0 30;
-    background-color:lightblue;
+    background-color:rgb(17, 114, 146);
     color:white;
     border-radius: 2px;
     border-width: 2px;
