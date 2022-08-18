@@ -41,7 +41,7 @@ p{
     place-items: center;
 }
 
-a{
+.link{
     font-size: 11px;
     font-weight: normal;
     text-align: right;
@@ -59,6 +59,8 @@ a{
     border-color: rgb(180,180,180);
     font-size: 15px;
 }
+
+/* --------dropdownbox----------- */
 .ms-pr{
     position:relative
 }
@@ -251,16 +253,13 @@ a{
 :focus{
     outline:none;
 }
+/* -----------dropdownbox end------------ */
 
 select{
     margin-top: 0px;
     margin-left: 50px;
     border: 1px solid;
-    font-size:5px;
-}
-
-#colorbox{
-    font-size: 5px;
+    /* font-size:10px; */
 }
 
 .selectbox{
@@ -268,7 +267,13 @@ select{
     width: 200px;
     height: 18px;
     margin-left: 50px;
-    font-size: 10px;
+    /* font-size: 10px; */
+}
+
+/* これがセレクトボックス内文字？なんで？ */
+a{
+    font-size: 14px;
+    text-align: center;
 }
 
 body{
