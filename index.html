@@ -117,15 +117,23 @@
         const key = params.get('key');
 
         $(function () {
-            $('form').submit(function () {
-                const commandName = "オーダー"
-                const colorNum = $('[name="colorNum"]').val();
-                const long_short  = "long"
-                const design  = $('[name="design"]').val();
-                const size = $('[name="size"]').val();
-                const msg = `${commandName}\n${colorNum}\n${long_short}\n${design}\n${size}`;
-                sendText(msg);
+          $('form').submit(function () {
+              const commandName = "オーダー";
+              const colorNum = $('[name="colorNum"]').val();
+              const long_short  = "long";
+              const design  = $('[name="design"]').val();
+              const size = $('[name="size"]').val();
+              const own = $('#own').prop('checked') ? 'OWN' : '';
+
+              const isDecline = (String(colorNum).replace(/^'/,'') === '999') || (size === '辞退');
+              if (isDecline && own) {
+                alert('「辞退します」と「自費購入」は同時に選べません。選択を修正してください。');
                 return false;
+              }
+
+              const msg = `${commandName}\n${colorNum}\n${long_short}\n${design}\n${size}\n${own}`;
+              sendText(msg);
+              return false;
             });
         });
 
@@ -133,4 +141,5 @@
 
 </body>
 </html>
+
 
